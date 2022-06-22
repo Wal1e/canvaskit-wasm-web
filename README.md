@@ -1,2 +1,5 @@
-# canvaskit-wasm-web
-使用WebAssembly版本的skia库，使用CanvasKit在浏览器直接画图渲染
+# canvaskit-wasm
+## canvaskit-wasm在浏览器中直接渲染sketch文件所用到的技术能力
+### 使用WebAssembly版本的skia库，使用CanvasKit在浏览器直接画图渲染
+##背景
+ &emsp;&emsp;处理和渲染sketch文件目前比较主流的方式有两种，一种是安装sketch插件，基于 Sketch插件相对容易拿到设计稿确定性的信息，借助插件里提供的sketch环境和api进行底图渲染，这种方式大多实现方案一致，主要还是依赖于sketch，基于其自身提供的能力。还有另外一种就是无需安装sketch插件直接在在浏览器中渲染，得益于新型编程语言WebAssembly和Emscripten提供的胶水能力，可将Skia的图形API导出到Web平台，CanvasKIt便是其编译导出到web平台的产物，开发者可利用CanvasKit提供的图形绘制接口在浏览器提供的画布（canvas）上进行绘制和渲染。 
